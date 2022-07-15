@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Doughnut } from 'react-chartjs-2';
 import './App.css';
 import BarChart from './components/BarChart';
 import LineChart from './components/LineChart';
@@ -36,6 +37,10 @@ function App() {
       <div style={{ width: 700 }}>
         <PieChart chartData={userData} />
       </div>
+      <div style={{ width: 700 }}>
+        <Doughnut chartData={userData} />
+      </div>
+
 
     </div>
   );
